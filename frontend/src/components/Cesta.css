@@ -1,0 +1,337 @@
+.cesta-pagina-container {
+  flex: 1;
+  width: 100%;
+  max-width: 1400px; 
+  margin: 0 auto;   
+  padding: 40px 10px;
+  box-sizing: border-box;
+}
+
+.pagina-cesta {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f4f6f8;
+  display: flex;
+  flex-direction: column;
+}
+
+.botao-continuar-comprando {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: transparent;
+  border: none;
+  color: #002b66;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.img-seta-voltar {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  transform: scaleX(-1);
+  background-color: #e0e6ed;
+  padding: 8px;
+  border-radius: 50%;      
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.botao-continuar-comprando:hover .img-seta-voltar {
+  background-color: #d0d9e5;
+  transform: scaleX(-1) translateX(2px);
+}
+
+.titulo-cesta {
+  color: #0b3480;
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin: 0 0 5px 0;
+  letter-spacing: 0.5px;
+}
+
+.subtitulo-itens {
+  color: #0b3480;
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.botao-lixeira {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.botao-lixeira:hover {
+  background-color: #dc3545; ;
+}
+
+.botao-lixeira:active {
+  transform: scale(0.92);
+}
+
+.lixeira-cesta {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  display: block;
+}
+
+
+.cesta-layout-grid {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 25px;
+  align-items: start;
+}
+
+.cesta-card-produtos {
+  background-color: #ffffff;
+  border-radius: 4px;
+  padding: 20px 25px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.tabela-cabecalho {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 40px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eeeeee;
+  color: #888888;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.linha-produto {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 40px;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.coluna-produto {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+}
+
+.badge-posicao {
+  background-color: #0b3480;
+  color: #ffffff;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 0.75rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-produto-cesta {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.detalhes-produto {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.nome-produto {
+  font-size: 0.88rem;
+  color: #333333;
+  line-height: 1.3;
+}
+
+.vendedor-produto {
+  font-size: 0.75rem;
+  color: #999999;
+}
+
+.vendedor-produto strong {
+  color: #0b3480;
+}
+
+.coluna-preco, .coluna-total {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #333333;
+}
+
+.coluna-total {
+  color: #0b3480;
+}
+
+.controle-quantidade {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #e0e0e0;
+  border-radius: 20px;
+  padding: 2px 8px;
+  gap: 10px;
+  background-color: #f8f9fa;
+}
+
+.controle-quantidade button {
+  background: transparent;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  color: #666666;
+  font-size: 1rem;
+}
+
+.controle-quantidade span {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.botao-lixeira {
+  background: transparent;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 6px;
+  cursor: pointer;
+  color: #888888;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rodape-card-produtos {
+  display: flex;
+  justify-content: flex-start; 
+  padding-top: 15px;
+  margin-top: 15px;
+  border-top: 1px solid #e0e0e0; 
+}
+
+.botao-esvaziar {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px; 
+  background: transparent;
+  border: 1px solid #dc3545;
+  color: #dc3545; 
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.botao-esvaziar:hover {
+  background-color: #dc3545; ;
+  color: #ffffff;
+}
+
+.botao-esvaziar .lixeira-cesta {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+  transition: filter 0.2s ease;
+  
+  filter: invert(27%) sepia(85%) saturate(2000%) hue-rotate(345deg) brightness(90%) contrast(90%);
+}
+
+.botao-esvaziar:hover .lixeira-cesta,
+.botao-lixeira:hover .lixeira-cesta {
+  filter: brightness(0) invert(1);
+}
+
+.botao-esvaziar:active {
+  transform: scale(0.97);
+}
+
+.cesta-card-resumo {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 20px 25px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.cesta-card-resumo h3 {
+  color: #333333;
+  font-size: 0.95rem;
+  font-weight: 800;
+  margin: 0 0 20px 0;
+  letter-spacing: 0.5px;
+}
+
+
+.linha-resumo {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.88rem;
+  color: #777777;
+  margin-bottom: 12px;
+}
+
+.linha-resumo.desconto span:last-child {
+  color: #e53935;
+}
+
+.divisor-resumo {
+  height: 1px;
+  background-color: #eeeeee;
+  margin: 20px 0;
+}
+
+.linha-total-final {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  color: #0b3480;
+}
+
+.valor-total-destaque {
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.botao-finalizar-compra {
+  width: 100%;
+  background-color: #0b3480;
+  color: #ffffff;
+  border: none;
+  padding: 14px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  border-radius: 4px;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  transition: background 0.2s ease;
+}
+
+.botao-finalizar-compra:hover {
+  background-color: #08255e;
+}
+
+.cesta-vazia-texto {
+  padding: "30px 0";
+   textAlign: "center";
+}
+
+@media (max-width: 900px) {
+  .cesta-layout-grid {
+    grid-template-columns: 1fr;
+  }
+}

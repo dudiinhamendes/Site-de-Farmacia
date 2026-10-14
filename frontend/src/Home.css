@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&family=Poppins:wght@600;800&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, .container-home {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.header-farmacia {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background-color: #0a192f;
+  color: #ffffff;
+  gap: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);  
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;                 
+  cursor: pointer;
+  user-select: none;
+}
+
+
+.img-logo {
+  height: 36px;
+  width: auto;
+  object-fit: contain;
+filter: invert(86%) sepia(21%) saturate(674%) hue-rotate(113deg) brightness(99%) contrast(93%);
+}
+
+.logo:hover .img-logo {
+  transform: scale(1.05); 
+}
+
+.nome-farmacia {
+    font-family: 'Poppins', sans-serif; 
+  font-size: 1.5rem;        
+  font-weight: 600;
+  letter-spacing: -0.5px;     
+  color: #ffffff;
+  line-height: 1;           
+}
+
+.nome-farmacia strong {
+  color: #aef3e3;           
+  font-weight: 800;
+}
+
+.conteiner-busca {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 0 16px;
+  height: 48px;
+  width: 100%;
+  max-width: 650px;
+  overflow: hidden; 
+}
+
+.img-lupa {
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+  object-fit: contain;
+  opacity: 0.6;
+  flex-shrink: 0; 
+}
+
+.botao-busca {
+  background: transparent;
+  border: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.conteiner-busca input {
+  flex: 1; 
+  height: 100%;
+  border: none !important;
+  outline: none !important;
+  background: transparent !important;
+  font-size: 1rem;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+}
+
+.conteiner-busca input::placeholder {
+  color: #6b7280;
+  font-weight: 400;
+}
+
+.acoes-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+flex-direction: row;
+}
+
+.botao-cesta {
+  position: relative !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 42px !important;
+  height: 42px !important;
+  background-color: #ffffff !important;
+  border-radius: 50% !important;
+  border: none !important;
+  cursor: pointer !important;
+  padding: 0 !important;
+  flex-shrink: 0 !important; 
+}
+
+.botao-cesta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.img-cesta {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  filter: brightness(0); 
+}
+
+.contador-cesta {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background-color: #aef3e3;     
+  color: #0a192f;               
+  font-size: 0.75rem;
+  font-weight: 800;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #0a192f;       
+}
+.texto-cesta {
+  color: #0a192f;
+  font-size: 0.95rem;
+}
+
+
+
+.botao-sair {
+  height: 44px;
+  padding: 0 18px;
+  background-color: rgba(255, 255, 255, 0.1); 
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.botao-sair:hover {
+background-color: rgba(255, 255, 255, 0.2);
+  color: #aef3e3;
+}
+
+.banner-destaque {
+  max-width: 1200px;
+  margin: 24px auto;
+  padding: 40px;
+  background: linear-gradient(135deg, #0a192f 0%, #172a45 100%);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  box-shadow: 0 8px 24px rgba(10, 25, 47, 0.15);
+  border: 1px solid rgba(174, 243, 227, 0.2);
+}
+
+.banner-conteudo {
+  flex: 1;
+  max-width: 580px;
+}
+
+.promocao-ofertas {
+  display: inline-block;
+  background-color: #aef3e3;
+  color: #0a192f;
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.banner-titulo {
+  font-size: 2rem;
+  color: #ffffff;
+  font-weight: 800;
+  margin: 0 0 12px 0;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.banner-descricao {
+  font-size: 0.95rem;
+  color: #cbd5e1;
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+.banner-descricao strong {
+  color: #aef3e3;
+}
+
+.banner-acoes {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.banner-cupom {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px dashed #aef3e3;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  color: #ffffff;
+}
+
+.banner-cupom strong {
+  color: #aef3e3;
+  margin-left: 6px;
+  letter-spacing: 0.5px;
+}
+
+.banner-botao {
+  background-color: #aef3e3;
+  color: #0a192f;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.banner-botao:hover {
+  background-color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.banner-imagem-lado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-banner {
+  max-width: 260px;
+  height: auto;
+}
+
+.secao-categorias {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.titulo-secao {
+  font-size: 1.6rem;
+  color: #0a192f; 
+  font-weight: 700; 
+  margin-bottom: 24px;
+  letter-spacing: -0.5px; 
+  text-align: left; 
+  padding-left: 48px;
+}
+
+.carrossel-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+}
+
+.carrossel-categorias {
+  display: flex;
+  flex-direction: row; 
+  gap: 16px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.carrossel-categorias::-webkit-scrollbar {
+  display: none;
+}
+
+.card-categoria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 160px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.card-categoria:hover {
+  transform: translateY(-4px);
+}
+
+.box-imagem {
+  width: 140px;
+  height: 140px;
+  background-color:white;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  margin-bottom: 8px;
+}
+
+.box-imagem img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.card-categoria span {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #4a5568;
+  text-align: center;
+}
+
+.botao-seta {
+  background-color: #0a192f; 
+  border: 1px solid rgba(174, 243, 227, 0.3);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(10, 25, 47, 0.25);
+  transition: all 0.2s ease-in-out;
+  z-index: 2;
+}
+
+.botao-seta img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  filter: brightness(0) invert(1); 
+  transition: transform 0.2s ease;
+}
+
+.botao-seta:hover {
+  background-color: #aef3e3; 
+  border-color: #aef3e3;
+  transform: scale(1.1);
+  box-shadow: 0 6px 16px rgba(174, 243, 227, 0.4);
+}
+
+.botao-seta:hover img {
+  filter: brightness(0);
+}
+
+.img-seta-esquerda {
+  transform: rotate(180deg);
+}
+
+.img-modal-em-breve {
+  width: 90px;                 
+  height: 90px;                 
+  object-fit: contain;          
+  margin: 0 auto 16px auto;    
+  display: block;               
+}
+
+.modal-container-breve {
+  max-width: 400px;
+}
+
+.modal-corpo-aviso {
+  padding: 10px 0;
+}
+
+.modal-titulo-aviso {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.modal-texto-aviso {
+  font-size: 0.9rem;
+  color: #64748b;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.img-modal-em-breve {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  margin: 0 auto 16px auto;
+  display: block;
+}

@@ -1,0 +1,198 @@
+.login-pagina {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #f4f6f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.login-card-container {
+  display: flex;
+  width: 100%;
+  max-width: 800px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.login-banner-esquerdo {
+  flex: 1;
+  background: linear-gradient(135deg, #002b66 0%, #001a3d 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.logo-login-centralizado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  transition: transform 0.2s ease;
+}
+
+.img-logo {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+}
+
+.nome-farmacia-login {
+  font-size: 28px;
+  color: #ffffff;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.nome-farmacia-login strong {
+  color: #4092ff;
+}
+
+.login-formulario-direito {
+  flex: 1.2;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+.cabecalho-form h2 {
+  font-size: 24px;
+  color: #002b66;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.cabecalho-form p {
+  color: #666666;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.form-login {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.campo-input {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.campo-input label {
+  font-size: 11px;
+  font-weight: 700;
+  color: #002b66;
+  letter-spacing: 0.5px;
+}
+
+.campo-input input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #e0e6ed;
+  border-radius: 8px;
+  background-color: #f8fafc;
+  font-size: 14px;
+  color: #333333;
+  outline: none;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+}
+
+.campo-input input:focus {
+  border-color: #002b66;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(0, 43, 102, 0.1);
+}
+
+.campo-senha {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.campo-senha input {
+  padding-right: 75px; 
+}
+
+.ver-senha {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  color: #002b66;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.ver-senha:hover {
+  background-color: #e0e6ed;
+}
+
+.mensagem-erro {
+  color: #d9534f;
+  font-size: 13px;
+  margin: 0;
+  font-weight: 500;
+}
+
+.acoes-form {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;    
+  gap: 15px;              
+  margin-top: 15px;      
+  width: 100%;
+}
+
+.botao-entrar {
+  flex: 1.5;
+  width: 100%; 
+  padding: 12px;
+  background-color: #002b66;
+  border: none;
+  color: #ffffff;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 43, 102, 0.2);
+}
+
+.botao-entrar:hover {
+  background-color: #001a3d;
+  transform: translateY(-1px);
+}
+
+.troca {
+  color: #4f46e5;         
+  font-size: 0.9rem;
+  text-align: center;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .login-card-container {
+    flex-direction: column;
+  }
+  .login-banner-esquerdo {
+    padding: 30px 20px;
+  }
+  .login-formulario-direito {
+    padding: 30px 20px;
+  }
+}
